@@ -1,66 +1,68 @@
-/* Bakgrund */
+/* Reset lite */
 body {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
     margin: 0;
-    padding: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
 }
 
-/* Stor futuristisk titel */
-.main-title {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 50px;
-    font-weight: 700;
+/* HEADER */
+.header {
+    background-color: #222;
+
+    /* BOX MODEL */
+    padding: 20px;            /* space inside */
+    border-bottom: 5px solid #ff4d4d;  /* border */
+
     text-align: center;
-    text-shadow: 0 0 10px cyan, 0 0 20px blue;
+    color: white;
 }
 
-/* Intro text */
-.intro {
-    font-size: 20px;
-    line-height: 1.6;
+/* PROFILE SECTION */
+.profile {
+    background-color: white;
+
+    width: 60%;              /* width */
+    margin: 30px auto;       /* center + space outside */
+    padding: 25px;           /* space inside */
+
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+/* STATS CONTAINER */
+.stats {
+    width: 70%;
+    margin: 20px auto;
+
+    /* spacing mellan boxar */
+    padding: 10px;
+}
+
+/* INDIVIDUAL BOXES */
+.stat-box {
+    background-color: #ff4d4d;
+    color: white;
+
+    width: 100%;            /* full width */
+    height: 60px;           /* fixed height */
+
+    margin: 15px 0;         /* space between boxes */
+    padding: 15px;          /* inner space */
+
+    border: 3px solid #222;
+
     text-align: center;
-    font-style: italic;
-}
-
-/* Quote box */
-.quote-box {
-    margin: 40px auto;
-    padding: 20px;
-    width: 60%;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-left: 5px solid cyan;
-}
-
-/* Själva citatet */
-.quote {
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 1.8;
-}
-
-/* Författare */
-.author {
-    text-align: right;
-    font-size: 16px;
-    font-style: italic;
-    opacity: 0.8;
-}
-
-/* Länk */
-.link-text a {
-    color: cyan;
-    text-decoration: none;
+    line-height: 30px;
     font-weight: bold;
 }
 
-/* Hover effekt */
-.link-text a:hover {
-    text-decoration: underline;
-}
+/* FOOTER */
+.footer {
+    background-color: #222;
+    color: white;
 
-/* Extra: användning av font shorthand */
-.link-text {
-    font: italic 18px 'Roboto', sans-serif;
+    margin-top: 40px;
+    padding: 15px;
+
+    text-align: center;
 }
