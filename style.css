@@ -1,52 +1,80 @@
-/* HELSIDESBAKGRUND med gradient + image */
+/* RESET */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                      url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
-    background-size: cover;
-    background-position: center;
-
-    color: white; /* textfärg */
 }
 
-/* HERO SECTION */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
+/* FIXED NAVBAR */
+.navbar {
+    position: fixed;   /* <-- fixed */
+    top: 0;
+    width: 100%;
 
-    background-color: rgba(0, 0, 0, 0.4); /* overlay */
-}
-
-/* CONTENT LAYOUT */
-.content {
-    width: 80%;
-    margin: 40px auto;
-}
-
-/* HEX COLORS */
-.card1 {
-    background-color: #1abc9c; /* HEX */
-    color: #ffffff;
-
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-/* RGB COLORS */
-.card2 {
-    background-color: rgb(52, 152, 219); /* RGB */
-    color: rgb(255, 255, 255);
-
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-/* NAMED COLORS */
-.card3 {
-    background-color: crimson; /* named color */
+    background-color: black;
     color: white;
+    text-align: center;
 
+    padding: 15px;
+}
+
+/* HERO */
+.hero {
+    height: 200px;
+    background-color: lightblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 60px; /* för navbar */
+}
+
+/* STICKY */
+.sticky-title {
+    position: sticky;  /* <-- sticky */
+    top: 0;
+
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+}
+
+/* CONTENT */
+.content {
     padding: 20px;
+}
+
+/* BOXES */
+.box {
+    width: 300px;
+    height: 150px;
+    margin: 40px auto;
+    padding: 20px;
+    color: white;
+}
+
+/* RELATIVE BOX */
+.relative-box {
+    background-color: teal;
+    position: relative;  /* <-- relative */
+}
+
+/* ABSOLUTE BOX */
+.absolute-box {
+    position: absolute;  /* <-- absolute */
+    top: 10px;
+    right: 10px;
+
+    background-color: red;
+    padding: 10px;
+}
+
+/* NORMAL BOX */
+.normal-box {
+    background-color: gray;
+}
+
+/* SPACING */
+.spacer {
+    height: 500px;
 }

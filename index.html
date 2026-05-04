@@ -2,31 +2,43 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title>Färger & Bakgrund</title>
+    <title>Position Uppgift</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- FIXED NAVBAR -->
+    <nav class="navbar">
+        <p>Min Navbar (fixed)</p>
+    </nav>
+
+    <!-- HERO -->
     <section class="hero">
-        <h1>Color Impact</h1>
-        <p>Färger påverkar hur en webbsida känns direkt.</p>
+        <h1>Position Demo</h1>
     </section>
 
+    <!-- STICKY TITLE -->
+    <h2 class="sticky-title">Scrolla ner ↓</h2>
+
+    <!-- CONTENT -->
     <section class="content">
-        <div class="card1">
-            <h2>HEX färger</h2>
-            <p>Denna box använder hex-koder för färg.</p>
+
+        <div class="box relative-box">
+            RELATIVE BOX
+
+            <div class="absolute-box">
+                ABSOLUTE
+            </div>
         </div>
 
-        <div class="card2">
-            <h2>RGB färger</h2>
-            <p>Denna box använder RGB för färg.</p>
+        <div class="spacer"></div>
+
+        <div class="box normal-box">
+            Normal box (ingen position)
         </div>
 
-        <div class="card3">
-            <h2>Named colors</h2>
-            <p>Denna box använder vanliga färgnamn.</p>
-        </div>
+        <div class="spacer"></div>
+
     </section>
 
 </body>
