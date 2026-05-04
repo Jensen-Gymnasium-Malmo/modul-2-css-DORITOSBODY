@@ -1,68 +1,52 @@
-/* Reset lite */
+/* HELSIDESBAKGRUND med gradient + image */
 body {
     margin: 0;
-    font-family: sans-serif;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                      url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+    background-size: cover;
+    background-position: center;
+
+    color: white; /* textfärg */
 }
 
-/* HEADER */
-.header {
-    background-color: #222;
-
-    /* BOX MODEL */
-    padding: 20px;            /* space inside */
-    border-bottom: 5px solid #ff4d4d;  /* border */
-
+/* HERO SECTION */
+.hero {
     text-align: center;
-    color: white;
+    padding: 100px 20px;
+
+    background-color: rgba(0, 0, 0, 0.4); /* overlay */
 }
 
-/* PROFILE SECTION */
-.profile {
-    background-color: white;
-
-    width: 60%;              /* width */
-    margin: 30px auto;       /* center + space outside */
-    padding: 25px;           /* space inside */
-
-    border: 2px solid #ccc;
-    border-radius: 10px;
+/* CONTENT LAYOUT */
+.content {
+    width: 80%;
+    margin: 40px auto;
 }
 
-/* STATS CONTAINER */
-.stats {
-    width: 70%;
-    margin: 20px auto;
+/* HEX COLORS */
+.card1 {
+    background-color: #1abc9c; /* HEX */
+    color: #ffffff;
 
-    /* spacing mellan boxar */
-    padding: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-/* INDIVIDUAL BOXES */
-.stat-box {
-    background-color: #ff4d4d;
-    color: white;
+/* RGB COLORS */
+.card2 {
+    background-color: rgb(52, 152, 219); /* RGB */
+    color: rgb(255, 255, 255);
 
-    width: 100%;            /* full width */
-    height: 60px;           /* fixed height */
-
-    margin: 15px 0;         /* space between boxes */
-    padding: 15px;          /* inner space */
-
-    border: 3px solid #222;
-
-    text-align: center;
-    line-height: 30px;
-    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-/* FOOTER */
-.footer {
-    background-color: #222;
+/* NAMED COLORS */
+.card3 {
+    background-color: crimson; /* named color */
     color: white;
 
-    margin-top: 40px;
-    padding: 15px;
-
-    text-align: center;
+    padding: 20px;
 }
