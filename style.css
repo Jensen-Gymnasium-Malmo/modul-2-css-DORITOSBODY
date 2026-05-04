@@ -1,80 +1,69 @@
-/* RESET */
+/* BAS */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* FIXED NAVBAR */
+/* NAVBAR */
 .navbar {
-    position: fixed;   /* <-- fixed */
-    top: 0;
-    width: 100%;
+    display: flex;                 /* FLEX */
+    justify-content: space-between;/* sprid ut */
+    align-items: center;           /* centrera vertikalt */
 
-    background-color: black;
+    background-color: #222;
     color: white;
-    text-align: center;
-
-    padding: 15px;
+    padding: 15px 20px;
 }
 
-/* HERO */
-.hero {
-    height: 200px;
-    background-color: lightblue;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 60px; /* för navbar */
+/* NAV LINKS */
+.nav-links {
+    display: flex;   /* FLEX */
+    gap: 20px;       /* mellanrum */
 }
 
-/* STICKY */
-.sticky-title {
-    position: sticky;  /* <-- sticky */
-    top: 0;
-
-    background-color: orange;
-    padding: 10px;
-    text-align: center;
+.nav-links a {
+    color: white;
+    text-decoration: none;
 }
 
-/* CONTENT */
-.content {
+/* LAYOUT */
+.layout {
+    display: flex;   /* FLEX layout */
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+
+    display: flex;          /* FLEX */
+    flex-direction: column; /* kolumn */
+    gap: 15px;
+
     padding: 20px;
 }
 
-/* BOXES */
-.box {
-    width: 300px;
-    height: 150px;
-    margin: 40px auto;
+/* MAIN */
+.main-content {
+    flex: 1; /* tar resten av platsen */
     padding: 20px;
+}
+
+/* CARD CONTAINER */
+.card-container {
+    display: flex;              /* FLEX */
+    flex-wrap: wrap;            /* radbryt */
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+/* CARDS */
+.card {
+    flex: 1 1 200px; /* flexibel storlek */
+    background-color: #4CAF50;
     color: white;
-}
 
-/* RELATIVE BOX */
-.relative-box {
-    background-color: teal;
-    position: relative;  /* <-- relative */
-}
-
-/* ABSOLUTE BOX */
-.absolute-box {
-    position: absolute;  /* <-- absolute */
-    top: 10px;
-    right: 10px;
-
-    background-color: red;
-    padding: 10px;
-}
-
-/* NORMAL BOX */
-.normal-box {
-    background-color: gray;
-}
-
-/* SPACING */
-.spacer {
-    height: 500px;
+    padding: 40px;
+    text-align: center;
 }

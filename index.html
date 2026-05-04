@@ -2,44 +2,44 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title>Position Uppgift</title>
+    <title>Flexbox Uppgift</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- FIXED NAVBAR -->
+    <!-- NAVBAR -->
     <nav class="navbar">
-        <p>Min Navbar (fixed)</p>
+        <h1>FlexApp</h1>
+        <div class="nav-links">
+            <a href="#">Hem</a>
+            <a href="#">Profil</a>
+            <a href="#">Kontakt</a>
+        </div>
     </nav>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h1>Position Demo</h1>
-    </section>
+    <!-- MAIN LAYOUT -->
+    <div class="layout">
 
-    <!-- STICKY TITLE -->
-    <h2 class="sticky-title">Scrolla ner ↓</h2>
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <p>Dashboard</p>
+            <p>Stats</p>
+            <p>Settings</p>
+        </aside>
 
-    <!-- CONTENT -->
-    <section class="content">
+        <!-- CONTENT -->
+        <main class="main-content">
+            <h2>Välkommen</h2>
 
-        <div class="box relative-box">
-            RELATIVE BOX
-
-            <div class="absolute-box">
-                ABSOLUTE
+            <div class="card-container">
+                <div class="card">Kort 1</div>
+                <div class="card">Kort 2</div>
+                <div class="card">Kort 3</div>
+                <div class="card">Kort 4</div>
             </div>
-        </div>
+        </main>
 
-        <div class="spacer"></div>
-
-        <div class="box normal-box">
-            Normal box (ingen position)
-        </div>
-
-        <div class="spacer"></div>
-
-    </section>
+    </div>
 
 </body>
 </html>
