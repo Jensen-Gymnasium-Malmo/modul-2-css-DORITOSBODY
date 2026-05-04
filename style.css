@@ -4,66 +4,72 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* NAVBAR */
-.navbar {
-    display: flex;                 /* FLEX */
-    justify-content: space-between;/* sprid ut */
-    align-items: center;           /* centrera vertikalt */
+/* GRID CONTAINER */
+.grid-container {
+    display: grid;
 
-    background-color: #222;
+    /* GRID STRUCTURE */
+    grid-template-columns: 200px 1fr;  /* sidebar + content */
+    grid-template-rows: 80px 1fr 60px; /* header, main, footer */
+
+    /* NAMED AREAS */
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+
+    height: 100vh;
+}
+
+/* HEADER */
+.header {
+    grid-area: header;
+    background-color: #111;
     color: white;
-    padding: 15px 20px;
-}
 
-/* NAV LINKS */
-.nav-links {
-    display: flex;   /* FLEX */
-    gap: 20px;       /* mellanrum */
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-}
-
-/* LAYOUT */
-.layout {
-    display: flex;   /* FLEX layout */
+    display: grid;
+    place-items: center;
 }
 
 /* SIDEBAR */
 .sidebar {
-    width: 200px;
-    background-color: #f0f0f0;
+    grid-area: sidebar;
+    background-color: #ddd;
 
-    display: flex;          /* FLEX */
-    flex-direction: column; /* kolumn */
-    gap: 15px;
-
-    padding: 20px;
+    display: grid;
+    place-items: center;
 }
 
 /* MAIN */
-.main-content {
-    flex: 1; /* tar resten av platsen */
-    padding: 20px;
-}
+.main {
+    grid-area: main;
 
-/* CARD CONTAINER */
-.card-container {
-    display: flex;              /* FLEX */
-    flex-wrap: wrap;            /* radbryt */
+    display: grid;
+
+    /* GRID IN GRID */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 
-    margin-top: 20px;
+    padding: 20px;
 }
 
 /* CARDS */
 .card {
-    flex: 1 1 200px; /* flexibel storlek */
-    background-color: #4CAF50;
+    background-color: #3498db;
     color: white;
 
-    padding: 40px;
-    text-align: center;
+    display: grid;
+    place-items: center;
+
+    height: 100px;
+}
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    background-color: #111;
+    color: white;
+
+    display: grid;
+    place-items: center;
 }
